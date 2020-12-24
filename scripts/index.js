@@ -10,13 +10,13 @@ const temp = document.querySelector('.temp');
 const deactivationPlayer = () => {
     temp.style.display = 'none';
     playerBtn.forEach(item => item.classList.remove('active'));
-    playerBlock.forEach(item => item.classList.remove('active'));  
+    playerBlock.forEach(item => item.classList.remove('active'));
 
 };
 
 
 playerBtn.forEach((btn, i) => {
-       
+
     btn.addEventListener('click', () => {
         deactivationPlayer();
         btn.classList.add('active');
